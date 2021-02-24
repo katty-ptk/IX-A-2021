@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    overflow: auto;
+    font-family: cursive;
+}
+
+.bg-image {
+    background-image: url("../poze/backgrounds/landscape.jpg");
+    position: relative;
+  
+    filter: blur(3px);
+  
+    height: 100vh;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main {
+    color: rgb(226, 211, 211);
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+.see-more-btn {
+    position: relative;
+    height: 70px;
+    width: 200px;
+    top: 20px;
+
+    background: transparent;
+    border: 1px solid grey;
+    border-radius: 50px;
+
+    font-size: 1.5em;
+    font-family: cursive;
+
+    outline: none;
+
+    transition: all 0.7s ease;
+}
+
+.see-more-btn:hover {
+    height: 80px;
+    width: 230px;
+    font-size: 1.7em;
+    background: rgb(83, 103, 216);
+    color: #ffffff;
+}
+
+
+/* section 1 */
+.section-1 {
+    position: relative;
+}
+
+.test-scroll {
+    background-image: url('../poze/people/profil\ fb.jpg');
+}
+
+.section-1 h1 {
+    color: #181414;
+    position: absolute;
+}
