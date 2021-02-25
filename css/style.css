@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body, html {
@@ -9,10 +10,10 @@ body, html {
 }
 
 .bg-image {
-    background-image: url("../poze/backgrounds/landscape.jpg");
+    background-image: url("../poze/backgrounds/colegiul.jpg");
     position: relative;
   
-    filter: blur(3px);
+    filter: blur(2px);
   
     height: 100vh;
   
@@ -22,7 +23,7 @@ body, html {
 }
 
 .main {
-    color: rgb(226, 211, 211);
+    color: rgb(61, 61, 61);
     font-weight: bold;
     position: absolute;
     top: 50%;
@@ -48,6 +49,7 @@ h1 {
 
     font-size: 1.5em;
     font-family: cursive;
+    color: grey;
 
     outline: none;
 
@@ -58,21 +60,112 @@ h1 {
     height: 80px;
     width: 230px;
     font-size: 1.7em;
-    background: rgb(83, 103, 216);
+    background: rgb(151, 200, 255);
     color: #ffffff;
 }
 
 
 /* section 1 */
 .section-1 {
-    position: relative;
+    filter: none;
 }
 
 .test-scroll {
-    background-image: url('../poze/people/profil\ fb.jpg');
+    /* background-image: url('../poze/people/ria\ &\ ana.jpg'); */
+    background-image: none;
+    background-color: rgb(175, 171, 184);
 }
 
-.section-1 h1 {
-    color: #181414;
+.section-1 nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    /* background: #7fd6ec; */
+    background: transparent;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    color: rgb(54, 54, 54);
+    text-transform: uppercase;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.nav-links li {
+    list-style-type: none;
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(54, 54, 54);
+    font-family: cursive;
+    font-weight: bold;
+    transition: all 0.5s ease-in;
+}
+
+a:hover {
+    color: rgb(0, 0, 0);
+    font-size: 1.4em;
+}
+
+span {
     position: absolute;
+    top: 90px;
+    width: 98%;
+    height: 3px;
+    border-radius: 10px;
+    background: rgb(88, 86, 85);
+}
+
+/* containers */
+.containers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.containers div {
+    width: 700px;
+    height: 500px;
+
+    /* border: 1px solid black; */
+}
+
+.containers .photo-container {
+    background-image: url('../poze/people/ria\ &\ ana.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 20px;
+
+    border-radius: 180px;
+}
+
+.containers .text-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.containers .text-container h1, .containers .text-container p {
+    position: relative;
+    top: 115px;
+
+    font-weight: bold;
+    color: rgb(54, 54, 54);
 }
